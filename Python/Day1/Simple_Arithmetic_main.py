@@ -4,10 +4,10 @@ count = 0
 for item in range(10):
 	#print(first_number, "-", second_number)
 	generator = generate_subtraction_problem()
-	print(generator)	
-	prompt = int(input("Enter your answer: "))
+	print(generator)
 	#prompt = int(input("Enter your answer: "))
-	print(calculate_score(prompt))
+	#prompt = int(input("Enter your answer: "))
+	#print(calculate_score(prompt))
 
 	
 		

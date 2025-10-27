@@ -14,16 +14,13 @@ def generate_subtraction_problem():
 	second_number = generate_random_second_number()
 	result = first_number - second_number
 	print(first_number, "-", second_number)
-	return "you have two attempts!!!"
+	prompt = int(input("Enter your answer: "))
+	count = 0
+	for _ in prompt:
+		if prompt == result:
+			count += 1
+	return count
 	
-def calculate_score(prompt):
-	first_number = random.randint(generator1,400000)
-
-	second_number = generate_random_second_number()
-	#result = first_number - second_number
-	print(first_number, "-", second_number)
-	#return "you have two attempts!!!"
-
 
 			
 	
