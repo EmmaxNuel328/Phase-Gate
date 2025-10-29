@@ -15,9 +15,16 @@ def answers():
 def check_if_prompt_is_wrong(prompt):
 	answer = answers()
 	index = -1
+	count = 0
 	for __ in answer:
 		index += 1
 		if prompt == answer[index]:
 			return "You are correct!!!"
+			count += 1
+			print("Final score",count)
 		else: 
 			return "You are wrong!!!"
+
+def score():
+	 check_if_prompt_is_wrong(prompt)
+	
