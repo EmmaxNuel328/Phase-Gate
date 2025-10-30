@@ -1,8 +1,9 @@
 public class Depreciation{
 
 public int depreciate(int prompt){
-return 0;
-
+int price = 50000;
+int depreciateValue = 8;
+int formula = 100 - depreciateValue;
 }
 
 

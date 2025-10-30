@@ -1,30 +1,24 @@
 import random
-generator1 = random.randint(2000,10000)
-generator2 = random.randint(1,10000)
+generator1 = random.randint(1,20)
+generator2 = random.randint(1,20)
 def generate_random_first_number():
-	first_number = random.randint(generator1,400000)
+	first_number = random.randint(generator1,30)
 	return first_number
 	
 def generate_random_second_number():
-	second_number = random.randint(generator2,400000)
+	second_number = random.randint(generator2,30)
 	return second_number
 
 
 
 
-def generate_subtraction_problem():
+def generate_subtraction_problem(prompt):
 	first_number = generate_random_first_number()
 	second_number = generate_random_second_number()
-	globalresult = first_number - second_number
-	print(first_number, "-", second_number)
-	count = 0
-	add = 0
-	#for
-	return "GoodLuck" 
-
-def add_score(prompt):
-	count = 0
-	for _ in range(10):		
-		if prompt == result:
-			count += 1
-		return count	
+	if first_number < second_number:
+		print(second_number, '-', first_number)
+		result = second_number - first_number
+	else:
+		print(first_number, "-", second_number)
+		result = first_number - second_number
+	return result
