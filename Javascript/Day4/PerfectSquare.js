@@ -1,5 +1,4 @@
 function isPerfectSquare(prompt){
-		factor = 0
 		for(number = 1;number <= prompt;number += 1){
 			if(prompt ** 0.5 == number){
 			return true
@@ -13,9 +12,9 @@ function isPerfectSquare(prompt){
 
 
 
-const myArray = [2,4,16,25,12] 
+const myArray = [2,169,4,16,25,100] 
 let index = 0
-while(index < myArray[index]){	
+while(index < myArray.length){	
 	answer = isPerfectSquare(myArray[index])
 	myArray[index] = answer
 	index++
